@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Departments</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <h3><span>HEALTH</span> CARE</h3>
+    <span class="links">
+                <a href="index.html">Home</a>
+                <select onchange="navigate(this.value)">
+                    <option value="depart">Categories</option>
+                    <option value="depart">Heart Care</option>
+                    <option value="depart">Eye Care</option>
+                    <option value="depart">Dental Care</option>
+                </select>
+                <select onchange="navigate(this.value)">
+                    <option>Doctors</option>
+                    <option value="doctor">Heart</option>
+                    <option value="doctor">Eye</option>
+                    <option value="doctor">Dentale</option>
+                </select>
+        <!-- user img-->
+                <img src="../Img/img7.jpeg">
+                <select onchange="navigate(this.value)">
+                    <!-- user name-->
+                    <option>Morad</option>
+                    <option value="profile">Profile</option>
+                    <option value="user-appoints">Appoints</option>
+                    <option value="#">Logout</option>
+                </select>
+            </span>
+    <span class="menu1">
+                <i class="fa fa-align-justify" aria-hidden="true"></i>
+            </span>
+    <span class="menu2">
+                <i class="fa fa-align-justify" aria-hidden="true"></i>
+            </span>
+</nav>
+<div class="dropdowan">
+    <a href="index.html">Home</a><hr>
+    <select onchange="navigate(this.value)">
+        <option value="depart">Categories</option>
+        <option value="depart">Heart Care</option>
+        <option value="depart">Eye Care</option>
+        <option value="depart">Dental Care</option>
+    </select><hr>
+    <select onchange="navigate(this.value)">
+        <option>Doctors</option>
+        <option value="doctor">Heart</option>
+        <option value="doctor">Eye</option>
+        <option value="doctor">Dentale</option>
+    </select><hr>
+    <!-- user img-->
+    <!--            <img src="../Img/img7.jpeg">-->
+    <select onchange="navigate(this.value)">
+        <!-- user name-->
+        <option>Morad</option>
+        <option value="profile">Profile</option>
+        <option value="user-appoints">Appoints</option>
+        <option value="#">Logout</option>
+    </select>
+</div>
+<div class="content">
+    <h2>Most Requested</h2>
+    <div class="row">
+        <!-- for on most reuested departs' offers -->
+        <div class="col col-xl-4 col-lg-6
+                          col-xs-6">
+            <div class="offer">
+                <img src="../Img/face.jpg">
+                <!-- doctor name & address-->
+                <div class="cover">
+                    <br><br><br>
+                    <span>Dr.Mohamed Alaa</span>
+                    <br><span>Cairo</span>
+                </div>
+                <h5>Skin Cleaning</h5>
+                <span>1050 booked</span>
+                <div class="stars starr">
+                    <input type="radio" id="5-stars" value="5 stars" name="t-star">
+                    <label for="5-stars" title="5 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="4-stars" value="4 stars" name="t-star">
+                    <label for="4-stars" title="4 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="3-stars" value="3 stars" name="t-star">
+                    <label for="3-stars"  title="3 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="2-stars" value="2 stars" name="t-star">
+                    <label for="2-stars" title="2 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="1-star" value="1 star" name="t-star">
+                    <label for="1-star"  title="1 star">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <!--average score-->
+                    <span class="avg">(4)</span>
+
+                </div>
+                <div class="prices">
+                    <!--old price-->
+                    <p class="old">
+                        <del> 360 EGP</del>
+                    </p>
+                    <!-- old price -new price-->
+                    <p class="save">save 200 EGP</p>
+                    <!--new price-->
+                    <p class="new">160 EGP </p>
+                </div>
+                <button  class="book">book</button>
+            </div>
+        </div>
+        <!-- for end-->
+        <!-- remove this-->
+        <div class="col col-xl-4 col-lg-6
+                          col-xs-6">
+            <div class="offer">
+                <img src="../Img/teeth.jpg">
+                <!-- doctor name & address-->
+                <div class="cover">
+                    <br><br><br>
+                    <span>Dr.Kamla Saad</span>
+                    <br><span>Cairo</span>
+                </div>
+                <h5>teeth whiteming</h5>
+                <span>1750 booked</span>
+                <div class="stars starr">
+                    <input type="radio" id="5-stars" value="5 stars" name="t-star">
+                    <label for="5-stars" title="5 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="4-stars" value="4 stars" name="t-star">
+                    <label for="4-stars" title="4 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="3-stars" value="3 stars" name="t-star">
+                    <label for="3-stars"  title="3 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="2-stars" value="2 stars" name="t-star">
+                    <label for="2-stars" title="2 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="1-star" value="1 star" name="t-star">
+                    <label for="1-star"  title="1 star">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <!--average score-->
+                    <span class="avg">(4)</span>
+
+                </div>
+                <div class="prices">
+                    <!--old price-->
+                    <p class="old">
+                        <del> 360 EGP</del>
+                    </p>
+                    <!-- old price -new price-->
+                    <p class="save">save 200 EGP</p>
+                    <!--new price-->
+                    <p class="new">160 EGP </p>
+                </div>
+                <button  class="book">book</button>
+            </div>
+        </div>
+        <div class="col col-xl-4 col-lg-6
+                          col-xs-6">
+            <div class="offer">
+                <img src="../Img/lazer.jpg">
+                <!-- doctor name & address-->
+                <div class="cover">
+                    <br><br><br>
+                    <span>Dr.Magda Ahmed</span>
+                    <br><span>Cairo</span>
+                </div>
+                <h5>Lazer</h5>
+                <span>860 booked</span>
+                <div class="stars starr">
+                    <input type="radio" id="5-stars" value="5 stars" name="t-star">
+                    <label for="5-stars" title="5 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="4-stars" value="4 stars" name="t-star">
+                    <label for="4-stars" title="4 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="3-stars" value="3 stars" name="t-star">
+                    <label for="3-stars"  title="3 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="2-stars" value="2 stars" name="t-star">
+                    <label for="2-stars" title="2 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="1-star" value="1 star" name="t-star">
+                    <label for="1-star"  title="1 star">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <!--average score-->
+                    <span class="avg">(4)</span>
+
+                </div>
+                <div class="prices">
+                    <!--old price-->
+                    <p class="old">
+                        <del> 360 EGP</del>
+                    </p>
+                    <!-- old price -new price-->
+                    <p class="save">save 200 EGP</p>
+                    <!--new price-->
+                    <p class="new">160 EGP </p>
+                </div>
+                <button  class="book">book</button>
+            </div>
+        </div>
+        <div class="col col-xl-4 col-lg-6
+                          col-xs-6">
+            <div class="offer">
+                <img src="../Img/eye.jpg">
+                <!-- doctor name & address-->
+                <div class="cover">
+                    <br><br><br>
+                    <span>Dr.Mohamed Alaa</span>
+                    <br><span>Cairo</span>
+                </div>
+                <h5>Eye</h5>
+                <span>1750 booked</span>
+                <div class="stars starr">
+                    <input type="radio" id="5-stars" value="5 stars" name="t-star">
+                    <label for="5-stars" title="5 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="4-stars" value="4 stars" name="t-star">
+                    <label for="4-stars" title="4 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="3-stars" value="3 stars" name="t-star">
+                    <label for="3-stars"  title="3 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="2-stars" value="2 stars" name="t-star">
+                    <label for="2-stars" title="2 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="1-star" value="1 star" name="t-star">
+                    <label for="1-star"  title="1 star">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <!--average score-->
+                    <span class="avg">(4)</span>
+
+                </div>
+                <div class="prices">
+                    <!--old price-->
+                    <p class="old">
+                        <del> 360 EGP</del>
+                    </p>
+                    <!-- old price -new price-->
+                    <p class="save">save 200 EGP</p>
+                    <!--new price-->
+                    <p class="new">160 EGP </p>
+                </div>
+                <button  class="book">book</button>
+            </div>
+        </div>
+        <div class="col col-xl-4 col-lg-6
+                          col-xs-6">
+            <div class="offer">
+                <img src="../Img/face1.jpg">
+                <!-- doctor name & address-->
+                <div class="cover">
+                    <br><br><br>
+                    <span>Dr.Mohamed Alaa</span>
+                    <br><span>Cairo</span>
+                </div>
+                <h5>Skin Clean</h5>
+                <span>1750 booked</span>
+                <div class="stars starr">
+                    <input type="radio" id="5-stars" value="5 stars" name="t-star">
+                    <label for="5-stars" title="5 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="4-stars" value="4 stars" name="t-star">
+                    <label for="4-stars" title="4 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="3-stars" value="3 stars" name="t-star">
+                    <label for="3-stars"  title="3 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="2-stars" value="2 stars" name="t-star">
+                    <label for="2-stars" title="2 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="1-star" value="1 star" name="t-star">
+                    <label for="1-star"  title="1 star">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <!--average score-->
+                    <span class="avg">(4)</span>
+
+                </div>
+                <div class="prices">
+                    <!--old price-->
+                    <p class="old">
+                        <del> 360 EGP</del>
+                    </p>
+                    <!-- old price -new price-->
+                    <p class="save">save 200 EGP</p>
+                    <!--new price-->
+                    <p class="new">160 EGP </p>
+                </div>
+                <button  class="book">book</button>
+            </div>
+        </div>
+        <div class="col col-xl-4 col-lg-6
+                          col-xs-6">
+            <div class="offer">
+                <img src="../Img/teeth1.jpg">
+                <!-- doctor name & address-->
+                <div class="cover">
+                    <br><br><br>
+                    <span>Dr.Mohamed Alaa</span>
+                    <br><span>Cairo</span>
+                </div>
+                <h5>teeth whiteming</h5>
+                <span>1750 booked</span>
+                <div class="stars starr">
+                    <input type="radio" id="5-stars" value="5 stars" name="t-star">
+                    <label for="5-stars" title="5 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="4-stars" value="4 stars" name="t-star">
+                    <label for="4-stars" title="4 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="3-stars" value="3 stars" name="t-star">
+                    <label for="3-stars"  title="3 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="2-stars" value="2 stars" name="t-star">
+                    <label for="2-stars" title="2 stars">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <input type="radio" id="1-star" value="1 star" name="t-star">
+                    <label for="1-star"  title="1 star">
+                        <i class="fa fa-star"></i>
+                    </label>
+                    <!--average score-->
+                    <span class="avg">(4)</span>
+
+                </div>
+                <div class="prices">
+                    <!--old price-->
+                    <p class="old">
+                        <del> 360 EGP</del>
+                    </p>
+                    <!-- old price -new price-->
+                    <p class="save">save 200 EGP</p>
+                    <!--new price-->
+                    <p class="new">160 EGP </p>
+                </div>
+                <button  class="book">book</button>
+            </div>
+        </div>
+        <!-- remove end-->
+    </div>
+</div>
+
+<footer class="page-footer font-small blue-grey lighten-5">
+    <div class="container text-center text-md-left mt-5">
+        <div class="row mt-3 dark-grey-text">
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                <h6 class="text-uppercase font-weight-bold">Company name</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing elit.</p>
+
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Products</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a class="dark-grey-text" href="#!">MDBootstrap</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">MDWordPress</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">BrandFlow</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+                </p>
+
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a class="dark-grey-text" href="#!">Your Account</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Shipping Rates</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Help</a>
+                </p>
+
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p>
+                    <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="connect">
+        Get connected with us on social networks!
+        <span class="icon">
+                <a href="#">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </span>
+    </div>
+
+</footer>
+<script src="../scripts/jquery.min.js"></script>
+<script src="../scripts/propper.js"></script>
+<script src="../scripts/bootstrap.min.js"></script>
+<script src="../scripts/script.js"></script>
+<script src="js.js"></script>
+</body>
+</html>

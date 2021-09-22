@@ -1,0 +1,520 @@
+body,.html{margin: 0;padding: 0}
+body{background: rgb(250,250,250);}
+*{box-sizing: border-box}
+nav{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    box-shadow: 2px 2px 3px #aaa;
+}
+nav h3{
+    display: inline;
+    font-family: Arial;
+    line-height: 70px;
+    margin-left: 10px;
+}
+nav h3 span{
+    color: #00e;
+}
+nav .links{
+    float: right;
+    line-height: 70px;
+    margin-right: 10px;
+}
+nav .links a{
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    margin-right: 15px;
+}
+nav .links select{
+    color: #000;
+    font-weight: 500;
+    font-size: 21px;
+    text-align: center;
+    margin-right: 13px;
+    border: none;
+}
+nav .links select:focus{outline: 0}
+
+nav .links img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.dropdowan{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background: #333;
+    margin-top: 0;
+    display: none;
+}
+.dropdowan a{
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    background: #333;
+}
+.dropdowan a:hover{color: #fff;}
+.dropdowan select{
+    color: #ddd;
+    margin: auto;
+    display: block;
+    font-size: 21px;
+    border: 0;
+    width: 120px;
+    cursor: pointer;
+    background: #333;
+}
+.dropdowan select:hover{color: #fff;}
+.dropdowan hr{
+    height: 1px;
+    width:100%;
+    background: #888;
+}
+.dropdowan select:focus{
+    outline: 0;
+}
+.menu1,.menu2{
+    line-height: 70px;
+    float: right;
+    cursor: pointer;
+    padding-right: 16px;
+    font-size: 22px;
+    display: none;
+}
+.display{display: inline}
+.carousel-item{height: 400px;}
+.carousel-control-next-icon{color: #000;}
+.content{
+    padding-left: 26px;
+    margin: 50px auto;
+    width: 100%;}
+.center{width: 90%;margin: auto;}
+.content .middle{
+    margin: 15px auto;
+    width: 90%;}
+
+.content h3{
+    display: inline;
+    height: 35px;
+    padding-right: 14px;
+    border-right: 1px solid #777;
+}
+.content .middle h3{margin-left: 16px;}
+
+.content .personal{
+    width: 66%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around
+}
+.change,.info{
+    width: 280px;
+    flex-shrink: 0;
+    margin: auto 10px;
+}
+.change {margin-top: 10px;
+    text-align: center;}
+.change h4{
+    text-align: center;
+    color: #00d;}
+.change input[type="file"]{
+    display: none;
+    margin: 10px auto;
+}
+.change label{
+    font-weight: 500;
+}
+.content .user .img,.photo{
+    width: 220px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+    background-size: 100% 100%;
+}
+.content .user .img span,.photo span{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+}
+.content .user .img span a,.photo span a{
+    margin-top: -4px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.info button{
+    width: 180px;
+    height: 34px;
+    background: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.info {text-align: left;}
+.info hr{
+    height: 4px;
+    background: darkblue;
+    border: none;
+    width: 120px;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+.info .edit{
+    margin: 10px auto;
+    width: 230px}
+.info p{
+    text-align: left;
+    font-weight: 400;
+    font-size: 19px;}
+.center > span{
+    font-size: 20px;
+    color: #888;
+    font-weight: 500;
+}
+.center .box{
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    flex-flow: row wrap;
+}
+.center .box1{
+    height: 240px;
+    width: 26%;
+    text-align: center;
+    position: relative;
+    margin-right: 5%;
+    background: #fff;
+    box-shadow: 2px 2px 3px #aaa;
+}
+.center .box1 img{
+    width: 100%;
+    height: 100%;
+}
+.center .box1 span{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    background: rgba(0,0,0,.25);
+    bottom: 0;
+    left: 0;
+}
+.center .box2{
+    height: 240px;
+    width: 39%;
+    margin-right: 2px;
+    padding: 16px;
+    background: #fff;
+    box-shadow: 2px 2px 3px #aaa;
+    
+}
+.center .box2 h4{color: #00e;margin-bottom: 15px;}
+.center .box2 p{
+    font-family:sans-serif;
+    font-size: 17px;
+}
+.center .box3{
+    height: 240px;
+    width: 25%;
+    padding-left: 30px;
+    padding-top: 70px;
+    margin-left: 0;
+    background: #fff;
+    box-shadow: 2px 2px 3px #aaa;
+}
+.center .box3 p{
+    color: #888;
+    font-size: 18px;
+    font-weight: 500;
+}
+.center .box3 button{
+    width: 190px;
+    height: 33px;
+    background: #fff;
+    border-radius: 20px;
+    color: #00e;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid #00e;
+    
+}
+.center .box3 button:hover{
+    background: #00e ;
+    color: #fff;
+}
+.content h2{margin-left: 50px;}
+.content .offer{
+    width: 340px;
+    height: 380px;
+    padding: 0;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 15;
+    background: #fff;
+    box-shadow: 2px 2px 3px #aaa;
+}
+.content .offer .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    color: #fff;
+    display: none;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 12px;
+    background: rgba(0,0,0,.55);
+    z-index: 999;
+    transition: all 2s;
+    
+}
+
+.content .offer h5{
+    height: 35px;
+    display: inline;
+    padding-right: 10px;
+    border-right: 1.4px solid #999;
+    margin-top: 16px;}
+.content .offer >span{
+    color: #006;
+    font-size: 17px;
+}
+.content .offer img{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 12px;
+}
+
+.offer .book{
+    border: 2px solid #00d;
+    border-radius: 10px;
+    color: #00d;
+    height: 45px;
+    width: 70px;
+    position: absolute;
+    margin-top: 5px;
+    right: 30px;
+    cursor: pointer;
+    background: #fff;
+    font-size: 19px;
+}
+.offer .book:hover{
+    background: #00d;
+    color: #fff;
+}
+.stars{
+    display: block;
+    direction: rtl;
+    margin-top: 12px;
+    text-align: center;}
+.stars .avg{
+    font-size: 17px;
+    display: inline;
+    margin-right: 10px;
+    color: #777;}
+.content .prices{
+    position: absolute;
+    text-align: center;
+    left: 25px;
+    display: inline-block
+}
+.content .prices p{
+    font-size: 18px;
+    margin-left: 6px;
+    margin-bottom: 8px;
+    display: inline-block
+}
+.content .prices .save{
+    color: yellowgreen;
+}
+.content .prices .new{
+    display: block;
+    margin-left: -26px;
+    font-size: 22px;
+    color: #00d;
+}
+.stars input[type="radio"]{
+    display: none;}
+.stars label{
+    cursor: pointer;
+    display: inline;
+    color:deeppink
+}
+.stars .fa{font-size: 22px;}
+.stars label:hover ~ label i{color:red}
+.stars input[type="radio"]:checked ~ label i{color: red;}
+.starr label{margin-top: 20px;
+    font-size: 20px;}
+.content .appoint{
+    width: 80%;
+    margin: 1px auto;
+}
+.content .user{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;}
+.content .appoint h5{
+    color: #00e;
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: monospace;
+}
+.content .appoint h6{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-family:serif
+}
+.appoint .table{
+    background: #fff;
+    box-shadow: 2px 2px 3px #888;
+    margin: 10px auto;
+    width: 70%;}
+.user{display: flex;}
+.user .img{width: 30%}
+.user .table{
+    width: 70%;
+    margin-top: 55px;}
+.appoint .table button{
+    width: 80px;
+    height: 36px;
+    font-size: 19px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.appoint .table .reserve{
+    background: #00e;
+    color: #fff;
+    border: none;
+}
+.appoint .table .cancel{
+    background: #fff;
+    color: #00e;
+    border: 1.5px solid #00e;
+}
+.appoint .table .cancel2{
+    background: #00e;
+    color: #fff;
+    border: 0;
+}
+.page-footer{
+    padding-top: 10px;
+    background: #222;
+    color: #ddd;
+}
+.dark-grey-text{color: #ddd;}
+.dark-grey-text:hover{text-decoration: none}
+.teal{
+    height: 3px;
+    background: #00b}
+.connect{
+    border-top: 2px solid #777;
+    padding-top: 12px;
+    text-align: center;
+    color: #fff;
+    height: 80px;
+    font-size: 20px;
+}
+.connect .icon{margin-left: 12px;}
+.connect .icon a{text-decoration: none;color: #ccc;}
+.connect .fa{
+    font-size: 25px;
+    margin-left: 1px;
+    color: #ddd;
+}
+.connect .fa-facebook-square{color: #3333ff;}
+
+.connect .fa-twitter-square{color:#00bfff}
+
+@media (max-width:1200px){
+    .content .offer{width: 400px;}
+    .user {width: 100%}
+    .user .change{width: 25%}
+    .user .table{width: 70%}
+}
+@media (max-width:1080px){
+    .center{width: 65%;}
+    .center .box2{
+        width: 100%;
+        display:block;
+        order: 3;}
+    .center .box3{order: 2;}
+    .center .box1, .center .box3{
+        margin-bottom: 40px;
+        width: 47.5%;
+    }
+    .appoint .table{width: 85%}
+    .user .change{width: 20%}
+    .user .table{width: 60%}
+}
+@media (max-width:980px){
+    .center{width: 75%;}
+    .content .offer{width: 330px;}
+    .user .change,.user .table
+    {width: 100%;text-align: center}
+}
+@media (max-width:810px){
+    nav .links{display: none}
+    .menu1{display: inline;}
+    .center{width: 85%;}
+    .content .personal{width: 75%;}
+    .content .offer{width: 300px;}
+    .offer .book{right: 15px}
+    .content .prices{left: 15px}
+    .appoint .table{width: 95%}
+    
+}
+@media (max-width:750px){
+    .content .offer{width: 380px;}
+    .offer .book{right: 30px}
+    .content .prices{left: 30px}
+}
+@media (max-width:715px){
+    
+    .connect {font-size: 18px;}
+    .info,.change{margin: auto -5px;}
+    .personal .info h4{font-size: 22px;}
+    .personal .info p{font-size: 18px;}
+    .photo{
+        height: 180px;
+        width: 180px;}
+    .appoint .table{width: 100%}
+    .change input[type="file"]{
+    margin-left: 20px;}
+    
+}
+@media (max-width:650px){
+    .change input[type="file"]{
+    margin-left: 36px;}
+}
+@media (max-width:580px){
+    .content .offer{width: 360px;}
+    .center .box3{padding-left: 10px;}
+    .center .box3 button{
+        font-size: 16px;
+        width: 170px;}
+}

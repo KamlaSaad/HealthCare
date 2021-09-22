@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Appointment</title>
+        <link rel="stylesheet" href="../style/bootstrap.min.css">
+        <link rel="stylesheet" href="../style/font-awesome.min.css">
+        <link rel="stylesheet" href="../style/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <h3><span>HEALTH</span> CARE</h3>
+            <span>
+                Get Connected With us on social network!
+            </span>
+            <span class="icon">
+                <a href="#">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </span>
+        </nav>
+        <aside>
+            <section>
+                <!-- data from database-->
+                <img src="../Img/img7.jpeg">
+                <p><a href="index.html">Dr: Mohamed Alaa</a></p>
+                <p>Adminstration</p>
+            </section> 
+            <section>
+                <span class="active2">
+                    <a href="appointment.html" class="active1">Appointments</a>
+                </span>
+                <span>
+                    <a href="patient.html">Patients</a>
+                </span>
+                <span><a href="offer.html">Offers</a></span>
+                <span>
+                    <a href="feedback.html">Feedback</a>
+                </span>
+                <input type="search" placeholder="Search">
+                <button>log out</button>
+            </section>
+        </aside>
+        <div class="toggle"></div>
+        <div class="content">
+            <div class="center">
+                <div class="table-container f-table">
+                    <div>
+                        <h4>Booked Appointment</h4>
+                    </div>
+                    <table class="table1" cellpadding="6" cellspacing="6">
+                        <!--for loop on appointments-->
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Morad Mohamed</td>
+                            <td>Skin Disease</td>
+                            <td>10-06-2019</td>
+                            <td>12:30 pm</td>
+                            <td>
+                            <select>
+                                <option>action</option>
+                                <option value="edit">edit</option>
+                                <option value="delete">delete</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Kamla Saad</td>
+                            <td>Eye Sensitivity</td>
+                            <td>20-03-2020</td>
+                            <td>10:40 am</td>
+                            <td>
+                                <select>
+                                    <option>action</option>
+                                    <option value="edit">edit</option>
+                                    <option value="delete">delete</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!--for end-->
+                        <tr class="tr-view">
+                            <td><button class="view">
+                                view all</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+           </div>  
+        </div>
+        <script src="../scripts/jquery.min.js"></script> 
+        <script src="../scripts/propper.js"></script> 
+        <script src="../scripts/bootstrap.min.js"></script>
+        <script src="../scripts/script.js"></script>
+   </body>
+</html>

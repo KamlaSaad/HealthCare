@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" href="../style/bootstrap.min.css">
+        <link rel="stylesheet" href="../style/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <h3><span>HEALTH</span> CARE</h3>
+            <span>
+                Get Connected With us on social network!
+            </span>
+            <span class="icon">
+                <a href="#">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </span>
+        </nav>
+        <aside>
+            <section>
+                <!-- data from database-->
+                <img src="../Img/img7.jpeg">
+                <p><a href="index.html">Dr: Mohamed Alaa</a></p>
+                <p>Adminstrator</p>
+            </section> 
+            <section>
+                <span>
+                    <a href="appointment.html" >Appointments</a>
+                </span>
+                <span>
+                    <a href="patient.html">Patients</a>
+                </span>
+                <span><a href="offer.html">Offers</a></span>
+                <span>
+                    <a href="feedback.html">Feedback</a>
+                </span>
+                <input type="search" placeholder="Search">
+                <button>log out</button>
+            </section>
+        </aside>
+        <div class="toggle"></div>
+        <div class="content">
+            <div class="personal">
+                <div class="change">
+                    <div class="photo" style="background: url(../Img/img7.jpeg);background-size: cover;background-position: right ">
+                        <span>
+                            <a href="#">change photo</a>
+                        </span>
+                    </div>
+                    <form action="" method="post">
+                        <input type="file" class="upload"><br>
+                        <label>Biography:</label><br>
+                        <textarea maxlength="150" rows="15" cols="15" placeholder="add some details about you...."></textarea><br>
+                        <button>Add</button>
+                    </form>
+                </div>
+                <!-- for loop for admin info -->
+                <div class="info">
+                    <h4>Personal Information</h4>
+                    <hr><br><br>
+                    <p>Name : Mohamed Alaa</p>
+                    <p>Email : mhmd2@gmail.com</p>
+                    <p>Password : Mohamed123</p>
+                    <p>Address : Kafrelsheikh</p>
+                    <p>Mobile : 022222222222</p>
+                    <p>Specilization : Neurology</p>
+                    <button class="edit">Edit Info</button>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/jquery.min.js"></script> 
+        <script src="../scripts/propper.js"></script> 
+        <script src="../scripts/bootstrap.min.js"></script>
+        <script src="../scripts/script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Patient</title>
+        <link rel="stylesheet" href="../style/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <h3><span>HEALTH</span> CARE</h3>
+            <span>
+                Get Connected With us on social network!
+            </span>
+            <span class="icon">
+                <a href="#">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </span>
+        </nav>
+        <aside>
+            <section>
+                <img src="../Img/img7.jpeg">
+                <p><a href="index.html">Dr: Mohamed Alaa</a></p>
+                    <p>Adminstration</p>
+            </section> 
+            <section>
+                <span>
+                    <a href="appointment.html" >Appointments</a>
+                </span>
+                <span class="active2">
+                    <a href="patient.html" class="active1">Patients</a>
+                </span>
+                <span><a href="offer.html">Offers</a></span>
+                <span>
+                    <a href="feedback.html">Feedback</a>
+                </span>
+                <input type="search" placeholder="Search">
+                <button>log out</button>
+            </section>
+        </aside>
+        <div class="toggle"></div>
+        <div class="content">
+            <header>Patients</header> 
+            <div class="middle">
+                <table class="table">
+                 <thead>
+                     <tr>
+                         <th scope="col">ID</th>
+                         <th scope="col">Name</th>
+                         <th scope="col">Mobile</th>
+                         <th scope="col">Address</th>
+                         <th scope="col">Bith Date</th>
+                         <th scope="col">Gender</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <!-- for loop on user data-->
+                     <tr>
+                         <td>1</td>
+                         <td>kamla saad</td>
+                         <td>01021022347</td>
+                         <td>kafrelsheikh</td>
+                         <td>30-09-1999</td>
+                         <td>female</td>
+                         <td><a href="#" class="btn btn-danger">delete</a></td>
+
+                     </tr>
+                     <!-- for end-->
+                     <tr>
+                         <td>1</td>
+                         <td>fatma alaa</td>
+                         <td>010100907775</td>
+                         <td>kafrelsheikh</td>
+                         <td>18-08-1999</td>
+                         <td>female</td>
+                         <td><a href="#" class="btn btn-danger">delete</a></td>
+
+                     </tr>
+                 </tbody>  
+              </table>  
+            </div>
+        </div>
+        <script src="../scripts/jquery.min.js"></script> 
+        <script src="../scripts/propper.js"></script> 
+        <script src="../scripts/bootstrap.min.js"></script>
+        <script src="../scripts/script.js"></script>
+   </body>
+</html>

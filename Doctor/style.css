@@ -1,0 +1,511 @@
+*{box-sizing: border-box;}
+body,html{padding: 0;margin: 0;}
+body{background: rgb(250,250,250);
+    position: relative;}
+nav{
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1.5px solid transparent;
+    border-bottom-color: #ddd;
+    text-align: center;
+    position: fixed;
+    background: #fff;
+    font-size: 18px;
+    z-index: 9999;
+}
+nav h3,span{line-height: 40px;}
+nav h3{float: left;
+    font-size: 25px;
+    font-family: Copperplate Gothic;
+    margin-top: -2px;
+    margin-left: -2px;
+    display: inline}
+nav h3 span{
+    font-family: Copperplate Gothic;
+    color: #00e}
+
+.h3{
+    background: #333;
+    color: #fff;
+    padding-left: 8px;
+    line-height: 40px;
+    margin-left: -2px;
+    width: 250px
+    }
+nav .icon{margin-left: 12px;}
+nav .icon a{text-decoration: none;color: #000;}
+nav .fa{
+    font-size: 25px;
+    margin-left: 1px;
+}
+nav .fa-facebook-square{
+    color: #00b;
+}
+
+nav .fa-twitter-square{color:#80ccff} 
+nav .fa-instgram-square{color:#f00} 
+aside{
+    height: 100%;
+    width: 250px;
+    left: 0;
+    margin-top: 40px;
+    background: #333;
+    position: fixed;
+    display: inline;
+    z-index: 9999;
+    padding-top: 18px;
+    text-align: center;
+}
+aside img{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+}
+aside section {
+    margin: 25px auto;
+    text-align: center;
+}
+
+aside section p:first-of-type{
+    margin: 10px;
+    display: inline;
+}
+aside section p a{
+    color: blue;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px;
+    display: inline;
+}
+aside section p:last-of-type{
+    color: yellow;
+    font-size: 18px;
+    margin-top: -16px;
+    margin-left: 45px;
+}
+
+aside section span{
+    width: 100%;
+    height: 40px;
+    background: #222;
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+}
+aside a{
+    line-height:40px;
+    color: #ccc;
+    font-size: 19px;
+    font-weight: 500;
+    text-decoration: none;
+}
+aside a:hover{color: #fff;text-decoration: none}
+.active1{color: #fff;}
+.active2{background: #000;}
+aside input,button{
+    width: 160px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+aside input{
+    background: #fff;
+    color: #ccc;
+    margin-top: 20px;
+}
+aside button{
+    cursor: pointer;
+    background:yellow;
+}
+
+.toggle{
+    float: left;
+    margin-left: 0;
+    margin-top: 80px;
+    height: 10px;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+    transition: all .4s ;
+    border: 22px solid transparent;
+    border-left-color:#000 
+    
+}
+.left{margin-left: 250px;}
+.open{left: 0;}
+.content{
+    width: 80%;
+    float: right;
+    display: inline;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.content .personal{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around
+}
+.personal > div{
+    width: 350px;
+    text-align: center;
+    flex-shrink: 0;
+    margin: auto 30px;
+}
+.personal .change input[type="file"]{
+    margin-left: 46px;
+    display: none
+}
+.personal .change label{
+    font-weight: 500;
+}
+.personal .photo{
+    width: 220px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+    background-size: 100% 100%;
+}
+.photo span{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+}
+.photo span a{
+    margin-top: -4px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.personal textarea{
+    border-radius: 20px;
+    width: 180px;
+    height: 160px;
+    padding: 10px;
+}
+.personal textarea:focus{
+    outline: 0;
+}
+.personal button{
+    width: 170px;
+    height: 34px;
+    background: blue;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.info {text-align: left;}
+.info hr{
+    height: 4px;
+    background: darkblue;
+    border: none;
+    width: 120px;
+    float: left;
+    margin-left: 62px;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+.personal .edit{
+    margin: 10px auto;
+    width: 210px}
+.info p{
+    margin-left: 62px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 19px;}
+
+.content .middle{
+    width: 80.5%;
+    margin: 0 auto ;
+    overflow: auto;
+}
+.table{
+    width: 99.6%;
+    margin-top: 0;
+    text-align: center;
+    box-shadow: 2px 2px 3px #aaa;
+}
+.table .btn{
+    height: 32px;
+    padding-top: 4px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #888;
+}
+.content header{
+    text-align: center;
+    width: 80%;
+    margin: 0;
+    height: 44px;
+    margin: 0 auto ;
+    font-size: 20px;
+    line-height: 44px;
+    background: #00c;
+    color: #fff;
+    box-shadow: 2px 2px 3px #aaa;
+    
+}
+.content .center{width: 85%;margin: 10px auto}
+.content .add{
+    background: #fff;
+    width: 99%;
+    margin: 40px auto;
+    padding: 16px;
+    box-shadow: 2px 2px 3px #aaa;
+}
+.content .add input[type="text"]{
+    width: 260px;
+    height: 34px;
+    margin: 20px;
+    border: none;
+    box-shadow: 2px 2px 3px #aaa;
+}
+
+.content .add div{
+    width: 200px;
+    height: 37px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background: blue;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 16px;
+    display: inline-block;
+}
+.content .add .add-btn{
+    height: 40px;
+    padding-bottom: 3px;
+}
+.content .add div span{
+    margin-left: 8px;
+}
+.content .add input[type="file"]{
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.content .add label{
+    font-size: 18px;
+    font-weight: 500;
+    width: 50px;}
+.content .add button{
+    width: 160px;
+    padding-top: 3px;
+    height: 36px;
+    color: #fff;
+    cursor: pointer;
+    background: blue;
+    border-radius: 0;
+}
+
+.content .offers{width: 99%;}
+.content .offers .box{
+    width: 240px;
+    height: 260px;
+    padding: 0;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 15;
+    background: #fff;
+    box-shadow: 2px 2px 3px #aaa;
+}
+.content .offers .box h5{margin-top: 10px;}
+.content .offers .box img{
+    width: 100%;
+    height: 60%;
+}
+.content .offers .box p{margin-bottom: 7px;}
+.table-container{
+    margin-top: 60px;
+    border: 1.5px solid #ddd;
+    border-top-color: #00d;
+    text-align: center;
+    overflow: auto;
+}
+
+.table-container div{
+    width: 100%;
+    height: 60px;
+}
+.table-container h4{
+    line-height: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.table-container select{
+    margin-top: 20px;
+    /*width: 60px;*/
+    max-height: 35px;
+    margin-top: -5px;
+    background:lightblue;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000;
+}
+
+.table-container .view{
+    border: 0;
+    color: purple;
+    width: 100px;
+    text-align: center;
+    background: transparent;}
+.table-container table{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.table-container table td{
+    border: 1.5px solid #ddd;
+}
+.tr-view {text-align: center;}
+.table-container table .tr-view td{
+    border: 0;}
+.table-container input{
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+    background: #fff;
+}
+
+.feedback{
+    padding: 16px;
+    width: 96%;
+    box-shadow: 2px 2px 3px #888;
+    background: #fff;
+    margin: 15px auto
+}
+
+.feedback span:first-of-type{
+    font-size: 23px;
+    font-family: serif;
+    font-weight: 500;
+}
+.feedback span:last-of-type{
+    color: #aaa;
+    font-size: 20px;
+}
+.feedback img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.feedback .name{text-align: center}
+.stars{
+    direction: rtl;
+    text-align: center;}
+.stars h6{color: #aaa;}
+.stars .avg{
+    font-size: 30px;
+    display: inline;
+    margin-right: 10px;
+    color: #777;}
+.stars input[type="radio"]{
+    display: none;}
+.stars label{
+    cursor: pointer;
+    display: inline;
+    color:deeppink
+}
+.stars .fa{font-size: 30px;}
+.stars label:hover ~ label i{color:red}
+.stars input[type="radio"]:checked ~ label i{color: red;}
+.starr label{margin-top: 20px;
+    font-size: 20px;}
+.content .offers .box .fa
+    {font-size: 24px;}
+
+
+@media (max-width:1000px){
+    .content{padding-left: 40px;}
+    .content .add .price:after{
+        content: "<br>";
+    }
+}
+@media (max-width:950px){
+    .personal > div{
+        margin: auto 15px;
+        width: 300px;}
+    .info p,.info hr{margin-left: 36px;}
+    .personal{width: 80%}
+    .personal .change{margin-right: 0}
+    .personal .photo{width: 220px;height: 220px;}
+    
+    
+}
+@media (min-width:901px){
+    nav h3{
+    background: #333;
+    color: #fff;
+    margin-left: -2px;
+    width: 250px;}
+    .personal .change{margin-right: -30px}
+    .personal .photo{width: 250px;height: 250px;}
+    .personal textarea{width: 250px}
+    
+}
+@media (max-width:900px){
+    nav h3{margin-left: 10px;}
+    aside{left: -250px}
+    .toggle{display: inline-block}
+    .content{width: 100%;padding-left: 20px;}
+    nav h3{color: #000;}
+}
+
+@media (max-width:850px){
+    .personal > div{
+        margin: auto 5px;
+        width: 280px;}
+    .center{width: 96%;}
+    .info p,.info hr{margin-left: 26px;}
+}
+@media (max-width:700px){
+    nav > span{display: none;}
+    nav .icon{
+        margin-right: 14px;
+        display: inline;
+        float: right}
+    nav h3{font-size: 26px;}
+    .personal {display: inline-block;}
+    .personal >div{display: block;margin: auto 0;}
+    .info h4{font-size: 20px}
+    .info p{font-size: 16px}
+    .info p,.info hr{margin-left: 42px;}
+    .info .edit{width: 180px;}
+    .personal .photo{width: 180px;height: 180px;}
+    .personal textarea{width: 160px;height: 160px;}
+    .personal button{width: 160px;}
+    .content header{width: 88%}
+    .content .middle{width: 88.5%}
+    
+    
+    
+}
+
+@media (max-width:660px){
+    .content .add{text-align: center;}
+    .content .add .fil,
+    .content .add button{
+        margin: 10px auto;
+    }
+    .content .offers .box{width: 350px;}
+    
+}
